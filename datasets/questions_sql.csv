@@ -2,40 +2,100 @@ question_id,question,ability,difficulty
 1,"Given tables Employees(emp_id, name, dept_id) and Departments(dept_id, dept_name). Write a query to get employee names and their department names using INNER JOIN.",SQL Syntax Knowledge,1
 2,"Write a query using LEFT JOIN to show all employees and their department names, including employees with no department assigned.",Table Relationship Understanding,2
 3,"Given tables Orders(order_id, customer_id, amount) and Customers(customer_id, name). Show all customers and their orders. Include customers who have never placed an order.",Table Relationship Understanding,2
-4,"What is the difference between INNER JOIN and LEFT JOIN? Give an example of when each should be used.",Logical Reasoning,2
+4,What is the difference between INNER JOIN and LEFT JOIN? Give an example of when each should be used.,Logical Reasoning,2
 5,"Given tables Students(student_id, name) and Grades(student_id, subject, grade). Write a query to find students who have NO grades recorded.",Logical Reasoning,3
 6,"Tables: Products(product_id, name, price) and OrderItems(order_id, product_id, quantity). Find the total quantity ordered for each product including products never ordered.",Query Construction,3
 7,"Write a self-join query on table Employees(emp_id, name, manager_id) to show each employee and their manager name.",Query Construction,4
 8,"Given tables A(id, val) and B(id, val). What is the result of CROSS JOIN? How many rows will be produced if A has 3 rows and B has 4 rows?",Logical Reasoning,2
 9,"Tables: Customers(customer_id, name) and Orders(order_id, customer_id, amount). Write a query to find customers who placed orders with total amount greater than 1000.",Query Construction,3
 10,"Identify the error in this query: SELECT name, score FROM Students, Scores WHERE student_id = student_id;",Error Detection,2
-11,"What happens when you use a WHERE clause to filter NULL values after a LEFT JOIN? Explain with an example.",Logical Reasoning,3
+11,What happens when you use a WHERE clause to filter NULL values after a LEFT JOIN? Explain with an example.,Logical Reasoning,3
 12,"Tables: Books(book_id, title, author_id) and Authors(author_id, author_name). Write a query to show all books and their authors. If a book has no author, still show the book.",Table Relationship Understanding,2
 13,"Write a query using FULL OUTER JOIN on tables LeftTable(id, val) and RightTable(id, val) to show all rows from both tables.",SQL Syntax Knowledge,3
 14,"Identify the error: SELECT E.name, D.dept_name FROM Employees E LEFT JOIN Departments D ON E.dept_id = D.dept_id WHERE D.dept_name IS NOT NULL;",Error Detection,3
 15,"Tables: Enrollments(student_id, course_id) and Courses(course_id, course_name) and Students(student_id, name). Write a three-table JOIN to list each student and the courses they are enrolled in.",Query Construction,4
 16,"Explain why this query produces duplicate rows: SELECT C.name, O.amount FROM Customers C JOIN Orders O ON C.customer_id = O.customer_id;",Error Detection,3
 17,"Tables: Employees(emp_id, name, dept_id) and Departments(dept_id, dept_name, manager_id). Write a query to find departments that have NO employees.",Table Relationship Understanding,3
-18,"What is the difference between ON and WHERE clause in a LEFT JOIN? Show an example where they produce different results.",Logical Reasoning,4
+18,What is the difference between ON and WHERE clause in a LEFT JOIN? Show an example where they produce different results.,Logical Reasoning,4
 19,"Write a query to find pairs of employees in the same department using self-join on Employees(emp_id, name, dept_id).",Query Construction,4
 20,"Tables: Sales(sale_id, product_id, region_id, amount), Products(product_id, name), Regions(region_id, region_name). Write a query to show total sales amount per product per region.",Query Construction,5
-21,"Identify all errors in: SELECT * FROM Orders O INNER JOIN Customers C ON O.id = C.id WHERE amount > 500 AND name IS NULL;",Error Detection,4
+21,Identify all errors in: SELECT * FROM Orders O INNER JOIN Customers C ON O.id = C.id WHERE amount > 500 AND name IS NULL;,Error Detection,4
 22,"Tables: Projects(project_id, name) and Employees(emp_id, name, project_id). Some employees are not assigned to any project. Write a query to list all projects and count of employees (0 if none).",Query Construction,4
-23,"Explain the behavior of NATURAL JOIN and why it can be dangerous to use.",Logical Reasoning,4
+23,Explain the behavior of NATURAL JOIN and why it can be dangerous to use.,Logical Reasoning,4
 24,"Tables: Students(student_id, name, class_id) and Classes(class_id, class_name, teacher_id) and Teachers(teacher_id, teacher_name). Write a 3-table JOIN to show each student, their class, and teacher.",Query Construction,4
 25,"Given a query with multiple LEFT JOINs producing unexpected NULLs, how would you debug and fix it? Describe the approach step by step.",Error Detection,5
 26,"Write a query to show products that have been ordered more than 5 times using JOIN and GROUP BY on Products(product_id, name) and OrderItems(order_id, product_id).",Query Construction,3
 27,"Tables: Accounts(account_id, user_id, balance) and Users(user_id, name, email). Find users whose total account balance exceeds 5000.",Query Construction,3
-28,"What is a Cartesian product? When does it occur in SQL and how do you avoid it?",Error Detection,2
+28,What is a Cartesian product? When does it occur in SQL and how do you avoid it?,Error Detection,2
 29,"Tables: Flights(flight_id, origin_id, destination_id) and Airports(airport_id, airport_name). Write a query using two JOINs on the same Airports table to show origin and destination names.",Table Relationship Understanding,5
-30,"Explain the difference between LEFT JOIN and RIGHT JOIN. Can one always be rewritten as the other? Show an example.",Logical Reasoning,3
+30,Explain the difference between LEFT JOIN and RIGHT JOIN. Can one always be rewritten as the other? Show an example.,Logical Reasoning,3
 31,"Write a query to find employees who share the same job title using self-join on Employees(emp_id, name, job_title).",Query Construction,3
 32,"Tables: Categories(cat_id, cat_name) and Products(product_id, name, cat_id). Show categories with no products using LEFT JOIN.",Table Relationship Understanding,2
 33,"Identify the error: SELECT P.name, C.cat_name FROM Products P RIGHT JOIN Categories C ON P.cat_id = C.cat_id WHERE P.name IS NOT NULL;",Error Detection,3
 34,"Tables: Suppliers(supplier_id, name) and Products(product_id, name, supplier_id, price). Find suppliers who supply products priced above 100 using JOIN and WHERE.",Query Construction,2
 35,"Write a query that uses both INNER JOIN and LEFT JOIN in the same query across three tables: Orders, Customers, and Payments.",Query Construction,5
-36,"Explain what happens to NULL values during an INNER JOIN vs OUTER JOIN. Give a concrete example.",Logical Reasoning,3
+36,Explain what happens to NULL values during an INNER JOIN vs OUTER JOIN. Give a concrete example.,Logical Reasoning,3
 37,"Tables: Teams(team_id, team_name) and Players(player_id, name, team_id). Find teams with more than 5 players using JOIN and GROUP BY HAVING.",Query Construction,3
-38,"What are table aliases and why are they important in JOIN queries? Give an example with and without aliases.",SQL Syntax Knowledge,1
+38,What are table aliases and why are they important in JOIN queries? Give an example with and without aliases.,SQL Syntax Knowledge,1
 39,"Tables: Inventory(item_id, warehouse_id, quantity) and Warehouses(warehouse_id, location). Show items with zero quantity in any warehouse using JOIN and WHERE.",Query Construction,3
 40,"Write a complete query using JOIN, GROUP BY, HAVING, and ORDER BY to find the top 3 customers by total order amount from Customers and Orders tables.",Query Construction,5
+41,"Given Employees(emp_id, name, dept_id, salary) and Departments(dept_id, dept_name), write a query to show each department and its average employee salary, including departments with no employees.",Query Construction,3
+42,Write a query to find employees whose dept_id does not match any row in Departments using LEFT JOIN.,Table Relationship Understanding,3
+43,Explain the difference between joining tables using ON A.id = B.id and filtering them using WHERE A.id = B.id in an INNER JOIN.,Logical Reasoning,3
+44,"Tables: Customers(customer_id, name), Orders(order_id, customer_id), and Payments(payment_id, order_id, amount). Write a query to list customers who have orders but no payments.",Query Construction,4
+45,"Identify the problem in: SELECT E.name, D.dept_name FROM Employees E JOIN Departments D; Explain the likely result.",Error Detection,2
+46,"Given Students(student_id, name) and Enrollments(student_id, course_id), write a query to count enrollments for every student, including students with zero enrollments.",Query Construction,3
+47,"Tables: Products(product_id, name, category_id) and Categories(category_id, name). Write a query to return only products whose category exists.",SQL Syntax Knowledge,2
+48,What is an equi-join? Give an example using Employees and Departments.,SQL Syntax Knowledge,2
+49,"Explain a non-equi join and provide a query that matches Employees(salary) to SalaryGrades(min_salary, max_salary, grade).",Logical Reasoning,4
+50,Write a query to find all pairs of products that belong to the same category without pairing a product with itself.,Query Construction,4
+51,Identify why SELECT * FROM A LEFT JOIN B ON A.id = B.id WHERE B.id IS NOT NULL behaves like an INNER JOIN.,Error Detection,3
+52,"Tables: Authors(author_id, name), Books(book_id, author_id, title), and Reviews(review_id, book_id, rating). Write a query to calculate the average rating for each author.",Query Construction,4
+53,Write a query using RIGHT JOIN to return all departments and matching employees from Employees and Departments.,SQL Syntax Knowledge,2
+54,Rewrite a RIGHT JOIN between Employees and Departments as an equivalent LEFT JOIN.,Logical Reasoning,3
+55,"Given Orders(order_id, customer_id, order_date) and Customers(customer_id, name), find customers who placed more than three orders in 2025.",Query Construction,4
+56,"Identify the error in: SELECT C.name, COUNT(O.order_id) FROM Customers C LEFT JOIN Orders O ON C.customer_id = O.customer_id;",Error Detection,3
+57,Why can COUNT(*) and COUNT(joined_table.id) produce different results after a LEFT JOIN?,Logical Reasoning,4
+58,"Tables: Employees(emp_id, name, manager_id). Write a self-join to list employees who have the same manager.",Query Construction,4
+59,"Given Customers and Orders, write a query to find customers whose latest order amount is greater than 500 using JOIN and a subquery or derived table.",Query Construction,5
+60,Explain how duplicate matching keys on both sides of a JOIN can multiply the number of result rows.,Logical Reasoning,4
+61,"Tables: A(id), B(id), and C(id). If A has 2 matching rows in B and each B row has 3 matching rows in C, how many joined rows can one A row produce? Explain.",Logical Reasoning,3
+62,Write a query to list departments whose total employee salary is greater than the company-wide average department salary total.,Query Construction,5
+63,"Identify and correct the ambiguous-column problem in: SELECT id, name FROM Employees E JOIN Departments D ON E.dept_id = D.id;",Error Detection,2
+64,"Tables: Users(user_id, name), Roles(role_id, role_name), and UserRoles(user_id, role_id). Write a many-to-many JOIN to list each user with all assigned roles.",Table Relationship Understanding,3
+65,Explain why joining a many-to-many relationship without the bridge table usually produces incorrect results.,Table Relationship Understanding,4
+66,"Tables: Courses(course_id, title), Prerequisites(course_id, prerequisite_id). Write a self-referencing JOIN to display each course and the title of its prerequisite.",Query Construction,4
+67,Write a query to find orders whose customer_id is NULL or references no existing customer.,Query Construction,4
+68,What is the difference between UNION and JOIN? Give a situation where each operation is appropriate.,Logical Reasoning,3
+69,"Tables: Employees(emp_id, name, dept_id) and Departments(dept_id, name). Write a query to return the number of employees in each department and order the result from largest to smallest.",Query Construction,3
+70,Identify the logical error in a query that joins Orders to OrderItems only by customer_id instead of order_id. What kind of incorrect result can occur?,Error Detection,4
+71,"Given Sales(product_id, sale_date, amount) and Products(product_id, name), write a query to show products with no sales during 2026 while retaining products with older sales.",Query Construction,5
+72,Explain why placing a date condition in the ON clause may preserve unmatched rows in a LEFT JOIN while placing it in WHERE may remove them.,Logical Reasoning,4
+73,"Tables: Employees(emp_id, name, dept_id) and Departments(dept_id, name). Write a query to find the department with the highest employee count.",Query Construction,4
+74,"Write a query to find duplicate customer names by self-joining Customers(customer_id, name) while avoiding mirrored duplicate pairs.",Query Construction,4
+75,What is a composite join condition? Give an example joining OrderItems and ShipmentItems by both order_id and product_id.,SQL Syntax Knowledge,3
+76,Identify the error in: SELECT * FROM Orders O JOIN Customers C ON O.customer_id = C.customer_id AND WHERE O.amount > 100;,Error Detection,2
+77,"Tables: Students(student_id, name), Courses(course_id, title), Enrollments(student_id, course_id, score). Write a query to list students and their average score for each course they take.",Query Construction,3
+78,Write a query to show every possible combination of Colors(color) and Sizes(size) using CROSS JOIN.,SQL Syntax Knowledge,2
+79,"If table A contains 5 rows and table B contains 6 rows, how many rows does A CROSS JOIN B produce? What changes if a WHERE filter is added afterward?",Logical Reasoning,2
+80,"Tables: Employees(emp_id, name, dept_id, salary). Write a self-join to find employees who earn more than another employee in the same department.",Query Construction,5
+81,Explain the difference between EXISTS with a correlated subquery and an INNER JOIN when checking whether a related row exists.,Logical Reasoning,5
+82,"Given Customers and Orders, write a JOIN-based query to find customers who have at least one order without returning duplicate customer rows.",Query Construction,4
+83,"Identify why SELECT DISTINCT may hide, rather than solve, an incorrect JOIN condition.",Error Detection,4
+84,"Tables: Products(product_id, name), Suppliers(supplier_id, name), and ProductSuppliers(product_id, supplier_id, cost). Write a query to find the lowest supplier cost for each product.",Query Construction,5
+85,"Write a query joining Employees, Departments, and Locations so that employees remain visible even when their department has no location assigned.",Table Relationship Understanding,4
+86,Explain join associativity. Under what circumstances can changing JOIN order affect results when OUTER JOINs are involved?,Logical Reasoning,5
+87,"Tables: Orders(order_id, customer_id), OrderItems(order_id, product_id, quantity), and Products(product_id, name). Write a query to calculate total quantity purchased per customer per product.",Query Construction,4
+88,"Identify the issue in: SELECT D.name, COUNT(*) FROM Departments D LEFT JOIN Employees E ON D.dept_id = E.dept_id GROUP BY D.name; when a department has no employees.",Error Detection,4
+89,Write a query to find employees whose salary is greater than the average salary of their own department using a JOIN with an aggregated derived table.,Query Construction,5
+90,"Design a query using at least four tables—Customers, Orders, OrderItems, and Products—to return each customer's total spending by product category, including only totals above 1000.",Query Construction,5
+91,"Tables: Customers(customer_id, name), Orders(order_id, customer_id, order_date). Write a query to find customers who have never placed an order.",Query Construction,3
+92,Explain the difference between an INNER JOIN and a LEFT JOIN when unmatched rows exist in the left table.,Logical Reasoning,2
+93,"Tables: Employees(emp_id, name, dept_id, salary) and Departments(dept_id, dept_name). Write a query to find the highest-paid employee in each department.",Query Construction,5
+94,"Identify the error in: SELECT E.name, D.dept_name FROM Employees E JOIN Departments D ON dept_id = dept_id; Explain how to correct it.",Error Detection,3
+95,"Tables: Orders(order_id, customer_id) and OrderItems(order_id, product_id, quantity). Write a query to find orders containing more than five distinct products.",Query Construction,4
+96,Explain why NULL values do not match each other using the equality operator in a JOIN condition. How can NULL values be handled when needed?,Logical Reasoning,4
+97,"Tables: Employees(emp_id, name, manager_id). Write a self-join to display each employee together with their manager's name, including employees without a manager.",Query Construction,4
+98,"Given Products(product_id, name) and Sales(product_id, amount), write a query to return the total sales for every product, showing zero for products with no sales.",Query Construction,4
+99,"Identify the problem with joining Customers, Orders, and OrderItems without specifying the relationship between Orders and OrderItems. What type of result may occur?",Error Detection,3
+100,"Tables: Students(student_id, name), Enrollments(student_id, course_id), and Courses(course_id, title). Write a query to find students enrolled in every available course.",Query Construction,5
