@@ -171,7 +171,7 @@ If you use EduPlanner+ in your research, please cite:
 ```bibtex
 @software{eduplannerplus2024,
   title={EduPlanner+: Multi-Agent Framework for Personalized Lesson Plan Generation},
-  author={Ngo, Viet Quoc},
+  author={Nguyen, Viet Quoc},
   year={2024},
   url={https://github.com/vietnq262/eduplannerplus}
 }
