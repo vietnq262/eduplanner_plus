@@ -50,9 +50,9 @@ The pipeline starts with an initial lesson plan and enters an optimization loop 
 4. **AAEA (Analyst Agent Expert Analysis):** Augments the lesson plan with common mistakes and their probabilities to highlight error-prone points.
 
 5. **Dynamic Skill Tree:** Evolves the student ability profile based on EAEE scores:
-   - **Upgrade:** If score > high_threshold (80), upgrade the weakest ability by +1 (max level 5)
-   - **Downgrade:** If score < low_threshold (40), downgrade the strongest ability by -1 (min level 1)
-   - Hard stops: total abilities capped at 25, minimum at 5
+   - **Upgrade:** If score > high_threshold (80), upgrade the weakest ability by +1
+   - **Downgrade:** If score < low_threshold (40), downgrade the strongest ability by -1
+   
 
 6. **CIDPP Evaluation:** Final assessment scores the best lesson plans on six criteria:
    - **Clarity:** Clear and understandable explanations
