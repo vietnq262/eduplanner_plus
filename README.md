@@ -1,4 +1,4 @@
-# EduPlanner+: Multi-Agent Framework for Personalized Lesson Plan Generation
+# EduPlanner+: LLM-based Multi-Agent System for Personalized Lesson Plan Generation in Multi-Domain Adaptive Learning
 
 ## What this is
 
@@ -170,9 +170,9 @@ If you use EduPlanner+ in your research, please cite:
 
 ```bibtex
 @software{eduplannerplus2024,
-  title={EduPlanner+: Multi-Agent Framework for Personalized Lesson Plan Generation},
+  title={EduPlanner+: LLM-based Multi-Agent System for Personalized Lesson Plan Generation in Multi-Domain Adaptive Learning},
   author={Nguyen, Viet Quoc},
-  year={2024},
+  year={2026},
   url={https://github.com/vietnq262/eduplannerplus}
 }
 ```
