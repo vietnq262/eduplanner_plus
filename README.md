@@ -169,7 +169,7 @@ This is the reference implementation for the paper:
 If you use EduPlanner+ in your research, please cite:
 
 ```bibtex
-@software{eduplannerplus2024,
+@software{eduplannerplus2026,
   title={EduPlanner+: LLM-based Multi-Agent System for Personalized Lesson Plan Generation in Multi-Domain Adaptive Learning},
   author={Nguyen, Viet Quoc},
   year={2026},
